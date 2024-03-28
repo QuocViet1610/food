@@ -1,0 +1,617 @@
+.section-p1 {
+    padding: 0px 0px;
+    background-color: #FFFAF0;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Giả sử z-index của banner swiper là dưới 1000 */
+    width: 100%;
+}
+.header .header-1 .search-form button{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    background: none;
+    border: none;
+    color:#302C2C;
+    cursor: pointer;
+   
+}
+.header .header-1 .search-form button:hover{
+    color:#266C0B;
+    border:#fff;}
+
+/*--------------Banner swiper---------------*/
+
+.section_header{
+
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}   
+.information_header{
+
+    width: 100%;
+    height: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 25px;
+    padding-bottom: 0px;
+    border-bottom: 4px solid transparent;
+    display: flex;
+
+}
+@media (max-width: 550px) {
+    .information_header {
+        display: block; /* Hoặc display: inline-block; hoặc display: inline; tùy thuộc vào yêu cầu cụ thể của bạn */
+    }
+}
+
+// css infor Rest
+/* Style for restaurant image */
+.restaurent_img {
+
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .infor{
+    margin-left: 30px;
+  }
+  /* Style for restaurant image */
+  .restaurent_img img {
+    width: 100%; /* Ảnh sẽ chiếm toàn bộ width của container */
+    height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+    border-radius: 20px; /* Bo tròn mép của ảnh nếu bạn muốn */
+  }
+  
+  
+/* Style for restaurant name */
+.infor h1 {
+  color: #333;
+  font-size: 24px;
+  margin-left: 5px;
+  line-height: 40px;
+}
+
+/* Style for descriptions */
+.infor h3 {
+  color: black;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-weight: 100;
+}
+
+/* Style for restaurant information */
+.restaurent_inf {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+/* Style for rating */
+.rating {
+  color: gold;
+  padding-right: 60px;
+  white-space: nowrap;
+}
+
+/* Style for address */
+.address {
+  color: #555;
+  padding-right: 60px;
+  white-space: nowrap;
+}
+
+/* Style for subtitle */
+.subtitel {
+  color: #777;
+  white-space: nowrap;
+}
+
+/* Style for buy section */
+.buy {
+  display: flex;
+  padding-right: 60px;
+  margin-top:20px
+}
+
+/* Style for open hour and free ship */
+.openHour {
+  padding: 5px;
+  padding-right: 60px;
+}
+
+.ship {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Additional styles for icons if needed */
+.fa-solid {
+  /* Add styles for solid icons */
+}
+
+.fa-utensils {
+  /* Add styles for utensils icon */
+}
+
+.fa-star {
+  /* Add styles for star icon */
+}
+
+.plus {
+  float: left;
+  width: 50%;
+}
+
+.inconplus {
+  display: inline-block;
+  background-color: #45db34;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+}
+
+.inconplus i {
+  font-size: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 555px) {
+  .inconplus {
+    float: left;
+  }
+}
+
+
+/* menu-contain */
+.menu-container {
+    max-width: 600px; /* Thay đổi kích thước tối đa theo mong muốn */
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .menu-tabs {
+    display: flex;
+    overflow-x: auto;
+   
+  }
+  
+  .menu-tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    background-color: #fff;
+    font-size: large;
+  }
+  .menu-tab_all {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    background-color: #fff;
+    font-size: large;
+  }
+  
+  .menu-tab.active {
+   color: #509535;
+   border-bottom: 2px solid #509535;
+  }
+  
+  .menu-tab_all.active {
+    color: #509535;
+    border-bottom: 2px solid #509535;
+   }
+
+  .menu-content {
+    padding: 15px;
+  }
+  
+
+  .price {
+    display: flex;
+    align-items: center;
+}
+
+/* Kiểu dáng cho số tiền */
+.price span {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    /* Các thuộc tính kiểu dáng khác nếu cần */
+}
+
+/* Kiểu dáng cho biểu tượng giỏ hàng */
+.price-icon {
+    margin-left: 10px;
+    /* Các thuộc tính kiểu dáng khác nếu cần */
+}
+
+/* Kiểu dáng cho icon giỏ hàng */
+.price-icon i {
+    font-size: 20px;
+    color: #6AC943/* Màu sắc icon, bạn có thể điều chỉnh theo ý muốn */
+    /* Các thuộc tính kiểu dáng khác nếu cần */
+}
+
+/*--------------Banner swiper---------------*/
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*--------------Banner swiper---------------*/
+
+
+/*--------------Features (Dịch vụ nổi bật)---------------*/
+.features-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.features-column{
+    padding: 1em;
+}
+.features-card{
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 0 0.62em;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+.features-card .features-icon{
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: #266C0B;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.features-icon::before{
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #6AC943;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.features-card h6{
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #302C2C;
+    font-family: "Montserrat", sans-serif;
+}
+.features-card:hover{
+    background-position: 0;
+}
+.features-card:hover .features-icon:before{
+    height: 2.25em;
+    width: 2.25em;
+}
+/*--------------Features (Dịch vụ nổi bật)---------------*/
+
+/*----------------Tabs SP mới và SP hot--------------*/
+.containertab{
+    background-color: #FFFAF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .tabtitle {
+    font-size: 46px;
+    font-weight: 600;
+    color: #6AC943;
+    margin-bottom: 3rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .tab button {
+    flex-direction: row;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 20px;
+    background-color: #6AC943;
+    color: #fff;
+  }
+
+  .tab button:first-child {
+    margin-right: 0; /* Đặt giá trị margin-right cho nút đầu tiên */
+  }
+
+  .tab button:not(:first-child) {
+    margin-left: 0; /* Đặt giá trị margin-left cho các nút không phải là đầu tiên */
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #266C0B;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #266C0B;
+  }
+/*----------------Tabs SP mới và SP hot--------------*/
+
+
+
+
+
+/*----------------Dnah muc--------------*/
+.section__container {
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .rvheader {
+    margin-bottom: 2rem;
+  }
+  
+  
+  .testimonials__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+ 
+  }
+  
+  .tabcontent{
+    border-top: 2px solid #7ba063;
+    margin-top: 5%;
+  }
+
+
+
+.pro {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+
+    transition: 0.2s ease;
+    position: relative;
+    background: #ffffff;
+}
+
+.pro {
+    display: flex;
+    
+    align-items: center;
+    color: black;
+}
+
+
+.pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro img {
+    width: 80px;
+    border-radius: 20px;
+}
+.pro .star i {
+  padding-top: 10px;
+}
+.pro .star i {
+    color: #eeee13;
+}
+
+.pro .des {
+    text-align: start;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.pro h4 {
+  color: black;
+}
+/*----------------Đánh giá--------------*/
+
+
+/*----------------Nút quay lại đầu trang--------------*/
+#backtop{
+    width: 50px;
+    height: 50px;
+    background-color: #6AC943;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    cursor: pointer;
+}
+
+#backtop:hover{
+    background-color: #266C0B;
+}
+
+#backtop i{
+    font-size: 30px;
+}
+
+#backtop{
+    z-index:2;
+}
+/*----------------Nút quay lại đầu trang--------------*/
+
+/*----------------Responsive--------------*/
+
+@media screen and (max-width: 900px) {
+    .blogcards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-section{
+        padding: 1em;
+    }
+    .features-card{
+        padding: 5em 2em;
+    }
+    .features-column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    #product1 .container{
+        justify-content: space-between;
+    }
+
+    #product1 .pro{
+        margin: 0px;
+    }
+    .blogcards{
+        grid-template-columns: 1fr;
+    }
+    .features-section{
+        padding: 1em 7em;
+    }
+    
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .chatpopup .chat-btn{
+        width: 30px;
+        height: 30px;
+        margin-bottom: -12px;
+        right:55px;
+
+    }
+    .chatpopup .chat-btn i{
+        font-size: 20px;
+    }
+    .chatpopup .chat-popup{
+        bottom:50px;
+        right:90px;
+    }
+    #popup img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .section-p1{
+        padding: 20px;
+    }
+    #product1 .pro{
+        width: 100%
+    }
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+    .chat-popup{
+        bottom: 120px;
+        right:10%;
+        width: 80vw;
+    }
+    .testimonials__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #Time-dis-play{
+        font-size: 20px;
+        word-spacing: 20px;
+    }
+    .cowndowns span{
+        font-size: 10px;
+        word-spacing: 20px;
+    }
+
+}
+
+/*----------------Responsive--------------*/
+
+
+
+
+
+

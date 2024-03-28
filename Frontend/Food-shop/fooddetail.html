@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Icon Font CSS Include -->
+    <!-- <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/v5-font-face.css">
+
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> 
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+
+    <!-- OwlCarouse CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- OwlCarouse CSS -->   
+
+    <!-- Custom CSS Include -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/fooddetail.css">
+    <!-- <link rel="stylesheet" href="./assets/css/index.css"> -->
+    <!-- Custom CSS Include --> 
+</head>
+<body>
+    <!--header, navbar menu-->
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"><img src="" alt="lg"></a>
+            <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+                <input type="search" name="search" placeholder="Search" id="search-box">
+                &emsp; <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <div class="icons">
+
+                <a href="index.html" class="login"  >
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                 </a>                                       
+
+                <div id="mobile" class="fas fa-outdent"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contain">
+<h1>Manage dishes in the restaurant</h1>
+<div class="contain-header">
+
+    <div class="plus_food">
+        <button class="plus_food--btn" id="showLoginForm"><i class="fa-solid fa-plus"></i></button>
+    </div>
+
+</div>
+<div class="login-form-container" id="loginFormContainer">
+    <form class="login-form">
+        <!-- Your login form content goes here -->
+        <span for="username">File:</span>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpg" />
+        <br>
+        <span for="password">Titel:</span>  
+        <input type="text" id="Titel" name="text" required>
+        <br>
+        <br>
+        <span for="text">Price:</span>
+        <input type="text" id="Price" name="text" pattern="[0-9]*" required>
+        <br>
+        <br>
+        <span for="text">Freeship:</span>
+        <select id="Freeship" name="Freeship" required>
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <br>
+        <br>
+        <span for="text">Category :</span>
+        <select id="Category">
+
+            </select>
+    
+        <br>
+        <button type="button" id="Save">Save</button>
+        <button type="button" id="closeLoginForm">Close</button>
+    </form>
+</div>
+        <table class="table-style" >
+
+        <thead>
+            <tr>
+                <!-- <th scope="col"><input type="checkbox" class="checkall" onclick="toggleChecked(this.checked)" /></th> -->
+                <th scope="col">ID</th>
+                <th scope="col">Titel</th>
+                <th scope="col">Category</th>  
+                <th scope="col">image</th>
+                <th scope="col">Freeship</th>
+                <th scope="col">Price</th> 
+                <th scope="col">Save</th>        
+                <th scope="col">Delete</th>   
+            </tr>
+        </thead>
+        <tbody class="tbody_food">        
+        </tbody>
+</table>
+</div>
+
+
+   <!--Footer-->
+   <section>
+    <footer class="footer">
+        <div class="col">
+            <img class="logo" src="" alt="logo">
+            <h4>Contact</h4>
+            <P><strong>Address :</strong>Hoài Đức, Nam Từ Liên, Hà Nội</P>
+            <P><strong>Phone :</strong>0366827983</P>
+            <P><strong>email:</strong> vietddls06@gmail.com </P>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Store</h4>
+            <a href="#">Member Benefits</a>
+            <a href="#">Account</a>
+            <a href="#">Career Opportunities</a>
+        </div>
+        <div class="col">
+            <h4>Policies</h4>
+            <a href="#">Shipping Methods</a>
+            <a href="#">Frequently Asked Questions</a>
+            <a href="#">Legal Information</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div class="col install">
+            <h4>App Installation</h4>
+            <div class="row">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <p>Secure Payment Gateway</p>
+            <img src="" alt="">
+        </div>
+        </footer>
+        </section>
+
+
+
+<!-- jQuery -->
+<script src="assets/fontawesome-free-6.4.0-web/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+
+integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- OwlCarouse js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!-- OwlCarouse js -->
+
+<!--emoji-button-->
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+<!--emoji-button-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+<script src="assets/js/fooddetail.js"></script>
+<!-- <script src="header.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="search.js"></script> -->
+<script>
+
+</script>
+</body>
+</html>

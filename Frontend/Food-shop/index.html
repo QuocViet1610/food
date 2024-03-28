@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
+    
+    <title>Home | JoyfulDining</title>
+
+    <!-- Icon Font CSS Include -->
+    <!-- <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/v5-font-face.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/js/">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> 
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <!-- Icon Font CSS Include -->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+
+    <!-- OwlCarouse CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- OwlCarouse CSS -->   
+
+    <!-- Custom CSS Include -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Custom CSS Include --> 
+
+</head>
+
+<body>
+<!--header, navbar menu-->
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"><img src="assets/images/logo3.png" alt="lg"></a>
+            <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+                <input type="search" name="search" placeholder="Search" id="search-box">
+                &emsp; <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart">
+                    <span id="countsp">0</span>
+                </a>
+                <a href="login.html" class="login"  >
+                    <span class="User"></span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                 </a>                                       
+
+                <div id="mobile" class="fas fa-outdent"></div>
+            </div>
+        </div>
+
+    </header>
+    <!--Banner Swiper Start-->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/Homepag2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/Homepage.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/Homepage4.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--Banner Swiper End-->
+    
+
+    <!--Tabs SP mới và SP bán chạy Start-->
+    <section class="section-p1">
+        <!-- Tab links -->
+        <div class="containertab mtop">
+        <div class="tabtitle">List of interests</div>
+        <div class="tab">
+            <button class="tablinks" onclick="opentab(event, 'Sanphammoi')">Near me</button>
+            <button class="tablinks" onclick="opentab(event, 'Sanphamhot')">favourite</button>
+        </div>
+        </div>
+        <!-- Tab content -->
+        <div id="Sanphammoi" class="tabcontent">
+            <section id="product1" class="section-p1">
+                <h2>Restaurants near me</h2>
+              
+                <div class="container mtop newProduct">
+        <!-- ADD MORE HERE -->
+                </div>
+            </section>
+        </div>
+        <!--Sản phẩm hot-->
+        <div id="Sanphamhot" class="tabcontent">
+            <section id="product1" class="section-p1">
+                <h2>favorite restaurant</h2>
+                <!-- <p><strong>Lựa chọn cho sức khỏe của mọi nhà</strong></p> -->
+                <div class="container mtop">
+                   
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--Tabs SP mới và SP bán chạy Start-->
+        <!--Features (Dịch vụ nổi bật) Start-->
+        <section class="features-section">
+            <div class="features-row">
+                <div class="features-column">
+                    <div class="features-card">
+                        <div class="features-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h6>Shipping incentives</h6>
+                    </div>
+                </div>
+                <div class="features-column">
+                    <div class="features-card">
+                        <div class="features-icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <h6>Quality assurance</h6>
+                    </div>
+                </div>
+                <div class="features-column">
+                    <div class="features-card">
+                        <div class="features-icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <h6>Diverse payments</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+    <!--Flash_Deals Start-->
+    <section class="flash_deals" style="background-color:#FFFAF0">
+        <div class="container mtop">
+            <div class="heading flex1">
+                <h2><i class="fas fa-bolt"></i>Flash Deals</h2>
+                <a href="#">Show all <i class="fas fa-caret-right"></i></a>
+            </div>
+                <div class="promotion">
+
+                </div>
+        </div>
+    </section>
+    <!--Flash_Deals End-->
+
+    <!--PHAN LOAI DO AN -->
+    <div class="section__container">
+        <div class="rvheader">
+            <h2>There's something for everyone!</h2>
+          </div>
+          <div class="testimonials__grid">
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/bread.jpg" alt="bread">
+                <p>Bread</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/rice.jpg" alt="rice">
+                <p>Rice</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/porridge.jpg" alt="porridge">
+                <p>Porridge</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/RiceNoodle.jpg" alt="Rice Noodle">
+                <p>Rice Noodle</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/snack.jpg" alt="Snack">
+                <p>Snack</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/Vegetable.jpg" alt="Vegetable">
+                <p>Vegetable</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/images/MilkTea.jpg" alt="milk tea">
+                <p>Milk Tea</p>
+              </a>
+            </div>
+          </div>
+   </div>
+    <section id="newsletter">
+        <!-- <div class="newstext">
+            <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
+        </div>
+        <div class="form-nlt">
+            <input type="text" id="emailInput" placeholder="Địa chỉ Email của bạn">
+            <button class="normal-nlt">Đăng ký</button>
+        </div> -->
+    </section>
+    <!--Nhập email nhận khuyến mãi End-->
+
+    <!--Nút quay lại đầu trang-->
+        <div id="backtop">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </div>
+    <!--Nút quay lại đầu trang-->
+
+    <!--Live Chat-->
+    <section class="chatpopup">
+        <button class="chat-btn"> 
+            <i class="fa-solid fa-comment-dots"></i>
+        </button>
+
+        <div class="chat-popup">
+            <div class="badge">1</div>
+            <div class="chat-area">
+             <div class="income-msg">
+                 <img src="" class="avatar" alt="">
+                 <span class="msg">Xin chào!</span>
+             </div>   
+            </div>
+
+            <div class="input-area">
+                <input type="text">
+                <button id="emoji-btn"> <i class="fa-regular fa-face-smile"></i></button>
+                <button class="submit"> <i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+    <!--Live Chat-->
+
+    <!--Footer-->
+    <section>
+        <footer class="footer">
+            <div class="col">
+                <a href="index.html" class="logo"><img src="assets/images/logo3.png" alt="lg"></a>
+                <h4>Contact</h4>
+                <P><strong>Address :</strong>Hoài Đức, Nam Từ Liên, Hà Nội</P>
+                <P><strong>Phone :</strong>0366827983</P>
+                <P><strong>email:</strong> vietddls06@gmail.com </P>
+                <div class="follow">
+                    <h4>follow us</h4>
+                    <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Store</h4>
+                <a href="#">Member Benefits</a>
+                <a href="#">Account</a>
+                <a href="#">Career Opportunities</a>
+            </div>
+            <div class="col">
+                <h4>Policies</h4>
+                <a href="#">Shipping Methods</a>
+                <a href="#">Frequently Asked Questions</a>
+                <a href="#">Legal Information</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="col install">
+                <h4>App Installation</h4>
+                <div class="row">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <p>Secure Payment Gateway</p>
+                <img src="" alt="">
+            </div>
+            </footer>
+            </section>
+<!--Icon MXh hiển thị-->
+    <div class="main">
+        <div class="iconn">
+            <a href="#"><i class="fab fa-facebook-f "></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-facebook-messenger "></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-instagram "></i></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-youtube "></i></a>
+        </div>
+    </div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+
+integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- OwlCarouse js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!-- OwlCarouse js -->
+
+<!--emoji-button-->
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+<!--emoji-button-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="assets/js/indexjv.js"></script>
+<script src="assets/js/index.js"></script>
+<!-- <script src="header.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="search.js"></script> -->
+
+</body>
+</html>

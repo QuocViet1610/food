@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
+    <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/v5-font-face.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/js/">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> 
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+
+    <!-- OwlCarouse CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- OwlCarouse CSS -->   
+
+    <!-- Custom CSS Include -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <!-- Custom CSS Include --> 
+</head>
+<body>
+<!--header, navbar menu-->
+  <header class="header">
+    <div class="header-1">
+        <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
+        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart">
+                <span id="countsp">0</span>
+            </a>
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="mobile" class="fas fa-outdent"></div>
+        </div>
+    </div>
+
+  </header>
+
+<!--Đăng nhập--> 
+  <section class="container-forms">
+    <div class ="form-login">
+      <div class ="form-content">
+        <h2 id="dangnhap">Login</h2>
+        <form action="#" id="flogin">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="email">
+          </div>
+
+          <div class="field input-field">
+            <input type="password" placeholder="password" class="password">
+            <!-- <i class="fa-regular fa-eye-slash eye-icon"></i> -->
+          </div>
+          
+          <div class="form-link">
+            <a href="#" class="forgot-pass">Forget Password?</a>
+          </div>
+
+          <div class="field button-field">
+            <button id="submit1">Login</button>
+          </div>
+
+          <div class="form-link">
+            <span>Register here<a href="signup.html" class="link signup-link">Register</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="line"></div>
+      <div class="media-options">
+        <a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=840539422652232&params%5Bdisplay%5D=%22popup%22&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22fd788c27-eb11-4cac-9880-27e38afe9fe4%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fsocialloginplus-apps.haravan.com%5C%2Fsocialloginplus%5C%2Fapi%5C%2Fzauth%5C%2Ffacebook%5C%2Fcallback%22&params%5Bresponse_type%5D=%22code%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%2215BhRNjkvZYRfL6juLxDK1igo1CEEegV%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3Alogin_platformization_read%22&source=gdp_delegated" class="field-facebook">
+          <i class="fa-brands fa-facebook fb-icon"></i>
+          &ensp; <span>Login With Facebook</span>
+        </a>
+      </div>
+      <br>
+      <div class="media-options">
+        <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=profile%20openid%20email&state=15BhRNjkvZYRfL6juLxDK1igo1CEEegV&response_type=code&client_id=3371183033-dcda1sl1an7h46p6qapglonr245r8ccl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsocialloginplus-apps.haravan.com%2Fsocialloginplus%2Fapi%2Fzauth%2Fgoogle%2Fcallback&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow" class="field-google">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="gg" class="google-img">
+          &ensp;<span>Login With Google</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!--Email-->
+  <section id="newsletter">
+
+  </section>
+<!--Footer-->
+  <section>
+    <footer class="footer">
+      <div class="col">
+          <img class="logo" src="" alt="logo">
+          <h4>Contact</h4>
+          <P><strong>Address :</strong>Hoài Đức, Nam Từ Liên, Hà Nội</P>
+          <P><strong>Phone :</strong>0366827983</P>
+          <P><strong>email:</strong> vietddls06@gmail.com </P>
+          <div class="follow">
+              <h4>follow us</h4>
+              <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-messenger"></i>
+              <i class="fab fa-youtube"></i>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+          <h4>Store</h4>
+          <a href="#">Member Benefits</a>
+          <a href="#">Account</a>
+          <a href="#">Career Opportunities</a>
+      </div>
+      <div class="col">
+          <h4>Policies</h4>
+          <a href="#">Shipping Methods</a>
+          <a href="#">Frequently Asked Questions</a>
+          <a href="#">Legal Information</a>
+          <a href="#">Terms of Use</a>
+      </div>
+      <div class="col install">
+          <h4>App Installation</h4>
+          <div class="row">
+              <img src="" alt="">
+              <img src="" alt="">
+          </div>
+          <p>Secure Payment Gateway</p>
+          <img src="" alt="">
+      </div>
+      </footer>
+  </section>
+<!--Icon MXh hiển thị-->
+  <div class="main">
+      <div class="iconn">
+          <a href="https://www.facebook.com/nutvigor/"><i class="fab fa-facebook-f "></i></a>
+      </div>
+      <div class="iconn">
+          <a href="https://www.facebook.com/messages/t/166376683230100"><i class="fab fa-facebook-messenger "></i></a>
+      </div>
+      <div class="iconn">
+          <a href="https://www.instagram.com/nutvigor/"><i class="fab fa-instagram "></i></i></a>
+      </div>
+      <div class="iconn">
+          <a href="#"><i class="fab fa-youtube "></i></a>
+      </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="assets/js/login.js"></script>
+
+</body>
+</html>

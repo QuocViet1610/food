@@ -1,0 +1,1057 @@
+.section-p1 {
+    padding: 0px 0px;
+    background-color: #FFFAF0;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+  
+}
+
+.header {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Giả sử z-index của banner swiper là dưới 1000 */
+    width: 100%;
+}
+.header .header-1 .search-form button{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    background: none;
+    border: none;
+    color:#302C2C;
+    cursor: pointer;
+   
+}
+.header .header-1 .search-form button:hover{
+    color:#266C0B;
+    border:#fff;}
+
+/* Style the link */
+.login {
+    color: #000; /* Change the color to your desired color */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure proper alignment */
+
+    border: 1px solid #000; /* Add border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Style the icon */
+
+/*--------------Banner swiper---------------*/
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*--------------Banner swiper---------------*/
+
+
+/*--------------Features (Dịch vụ nổi bật)---------------*/
+.features-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.features-column{
+    padding: 1em;
+}
+.features-card{
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 0 0.62em;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+.features-card .features-icon{
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: #266C0B;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.features-icon::before{
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #6AC943;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.features-card h6{
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #302C2C;
+    font-family: "Montserrat", sans-serif;
+}
+.features-card:hover{
+    background-position: 0;
+}
+.features-card:hover .features-icon:before{
+    height: 2.25em;
+    width: 2.25em;
+}
+/*--------------Features (Dịch vụ nổi bật)---------------*/
+
+/*----------------Tabs SP mới và SP hot--------------*/
+.containertab{
+    background-color: #FFFAF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .tabtitle {
+    font-size: 46px;
+    font-weight: 600;
+    color: #6AC943;
+    margin-bottom: 3rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .tab button {
+    flex-direction: row;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 20px;
+    background-color: #6AC943;
+    color: #fff;
+  }
+
+  .tab button:first-child {
+    margin-right: 0; /* Đặt giá trị margin-right cho nút đầu tiên */
+  }
+
+  .tab button:not(:first-child) {
+    margin-left: 0; /* Đặt giá trị margin-left cho các nút không phải là đầu tiên */
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #266C0B;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #266C0B;
+  }
+/*----------------Tabs SP mới và SP hot--------------*/
+
+/*----------------SP mới và SP hot--------------*/
+
+#product1 {
+    text-align: center;
+    border: 1px solid #FFFAF0;
+    padding: 20px;
+    background: #FFFAF0;
+    /*padding-right: 70px;
+    padding-left: 70px;*/
+}
+
+#product1 .section-p1{
+    padding: 0;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#product1 .pro {
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+    background: #ffffff;
+}
+
+#product1 .pro a{
+    display: flex;
+    
+    align-items: center;
+}
+
+#product1 .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 80px;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+#product1 .pro .des span {
+    color: #302C2C;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #302C2C;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+#product1 .pro .des h5:hover {
+    color: #266C0B; 
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: #0e0d0d;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #266C0B;
+}
+
+#product1 .pro .des h4 span{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #266C0B;
+}
+
+#product1 .pro .star i {
+    color: #eeee13;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #6AC943;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: #6AC943;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#product1 .pro .cart:hover {
+    color: #266C0B; 
+}
+
+
+span.ship {
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(255, 88, 88);
+    max-width: 90px;
+    padding:5px;
+    border-radius: 10px;
+  }
+
+#ship_true{
+    background-color: rgb(88, 255, 99);
+}
+
+#ship_false{
+    background-color: rgb(255, 88, 88);
+}
+
+/*----------------SP mới và SP hot--------------*/
+
+/*----------------Đồng hồ đếm ngược--------------*/
+
+.cowndowns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #fff;
+}
+
+.cowndowns h1{
+    margin-top: 0px;
+    font-size: 40px;
+    word-spacing: 90px;
+    color: #6AC943;
+    cursor: pointer;
+}
+.cowndowns h1:hover{
+    color: #266C0B;
+}
+
+.cowndowns h2{
+    font-size: 30px;
+    color: #266C0B;
+}
+.cdcontainer{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.cowndowns span{
+    word-spacing: 80px;
+    margin-left: 50px;
+    color: #266C0B;
+}
+
+#Time-dis-play{
+    margin-top: 5px;
+}
+/*----------------Đồng hồ đếm ngược--------------*/
+
+/*----------------flash_deals--------------*/
+.container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+.flex {
+    display: flex;
+  }
+  
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.mtop {
+    margin-top: 0;
+  }
+
+.heading{
+    padding: 20px 0 0 0;
+    margin-bottom: 30px;
+  }
+
+.heading h2{
+    font-size: 46px;
+    color: #6ac943;
+    line-height: 54px;
+  }
+.heading h2 i{
+    font-size: 40px;
+    line-height: 54px;
+    color: red;
+    margin-right: 10px;
+  }
+  
+.heading a{
+    font-size: 30px;
+    line-height: 54px;
+    color: #266C0B;
+    margin-right: 10px;
+  }
+
+.heading a i {
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+.flash_deals .item{
+    padding: 20px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+    background: #ffffff;
+    width: 310px;
+    display: flex;
+  
+  }
+
+.flash_deals .item:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+  .promotion{
+    display: flex;
+    flex-wrap: wrap;
+  }
+.promotion img {
+    display: block;
+    border-radius: 20px;
+    width: 100px;
+    
+  }
+
+  .promotion .img {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .promotion .img span {
+    position: absolute;
+    top: 0; /* Đặt vị trí ở đầu trên của phần tử cha (.img) */
+    left: 0; /* Đặt vị trí ở đầu trái của phần tử cha (.img) */
+    background-color: #33ff00; /* Màu nền của dòng chữ (thay đổi thành màu bạn muốn) */
+    color: #ffffff; /* Màu chữ của dòng chữ (thay đổi thành màu bạn muốn) */
+    padding: 5px; /* Điều chỉnh khoảng cách giữa vị trí và chữ */
+    margin: 0; /* Đảm bảo không có margin nào ảnh hưởng đến vị trí */
+  }
+
+.star.flex {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.flash_deals .star{
+    flex-direction: row;
+
+  }
+
+.flash_deals .view{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    font-size: 20px;
+  }
+
+.flash_deals .item:hover .view{
+    opacity: 1;
+    color: #266C0B;
+  }
+
+.flash_deals .item:hover .view a{
+    color: #266C0B;
+}
+
+.flash_deals .star i{
+    padding-top: 7px;
+    color: #f7d833;
+    margin: 5px 5px 5px 0;
+  }
+
+.flash_deals h5 {
+    padding-top: 7px;
+    color: #302C2C;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.flash_deals h5:hover {
+    color: #266C0B; 
+}
+
+.flash_deals p{
+    color: #266C0B;
+  }
+
+.flash_deals p span{
+    color: #266C0B;
+  }
+
+.flash_deals p label{
+    text-decoration: line-through;
+    color: #302C2C;
+    margin-left: 10px;
+  }
+
+.flash_deals .price i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #6AC943;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: #6AC943;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.flash_deals .price i:hover{
+    color: #266C0B;
+  }
+  
+.owl-nav i{
+    font-size: 20px;
+    transition: 005s;
+    width: 50px;
+    height: 50px;
+    background: #e2eff7;
+    border-radius: 50%;
+    color: white;
+    line-height: 50px;
+  }
+
+.owl-nav i:hover{
+    background: #266C0B;
+    color: #fff;
+  }
+.owl-next i,
+.owl-prev i{
+    position: absolute;
+    top: 40%;
+  }
+
+.owl-next i{
+    right: -20px;
+    background: #6AC943;
+  }
+
+.owl-prev i{
+    left: -20px;
+  }
+/*----------------flash_deals--------------*/
+
+/*----------------Popup--------------*/
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* CSS cho nền mờ xung quanh popup */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+/*----------------Popup--------------*/
+
+/*----------------Live Chat-----------------------*/
+
+.chatpopup button{
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+.chatpopup body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.chatpopup .chatpopupsection{
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.chatpopup .chat-btn{
+    position: fixed;
+    right:75px;
+    bottom: 50px;
+    margin-bottom: -13.5px;
+    background: #266C0B;
+    color: white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.chatpopup .chat-btn:hover{
+    background-color: #6AC943;
+}
+
+.chatpopup .chat-btn i{
+    font-size: 30px;
+}
+
+.chatpopup .chat-btn:hover, .submit:hover, #emoji-btn:hover{
+    opacity: 1;
+}
+
+.chatpopup .chat-popup{
+    display: none;
+    position: fixed;
+    bottom:80px;
+    right:135px;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1.5px solid #266C0B;
+}
+
+.chatpopup .show{
+    display: flex;
+    z-index: 1000;
+}
+
+.chat-area{
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.income-msg{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.income-msg .msg{
+    background-color: rgb(183, 183, 183);
+    color: white;
+    padding:0.7rem;
+    border-radius: 25px;
+    margin-left: 0.4rem;
+}
+
+.badge{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #266C0B;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-10px;
+    right: -10px;
+    font-size: 12px;
+}
+
+.input-area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]{
+    width:100%;
+    border: 2px solid #266C0B;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 2.3rem;
+}
+
+#emoji-btn{
+    position: absolute;
+    font-size: 1.5rem;
+    background: transparent;
+    right: 23%;
+    opacity:0.5;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #266C0B;
+}
+
+.submit{
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    background-color: green;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0.7;
+    height: 2.3rem;
+}
+
+
+.out-msg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.my-msg{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem;
+    padding: 0.5rem;
+    background-color: #ddd;
+    border-radius: 25px;
+    word-break: break-all;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.emoji-picker {
+    z-index: 1001;
+}
+
+/*----------------Live Chat-----------------------*/
+
+/*----------------Blog Tin tức--------------*/
+.blogcontainer{
+    width: 100%;
+    background-color: #FFFAF0;
+}
+
+.blog-section{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.blog-section .blogtitle{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .blogtitle h2{
+    font-size: 40px;
+    color: #6AC943;
+}
+
+.blogcards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 25px auto;
+
+}
+
+.blogcards .blogcard{
+    width: 100%;
+    position: relative;
+}
+
+.blogimage img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.blogcontent{
+    padding: 15px 20px;
+}
+
+.blogcontent h4{
+    font-size: 24px;
+    color: #302C2C;
+    font-weight: 500;
+}
+
+.blogcontent p{
+    color: #656565;
+    font-size: 15px;
+}
+
+.blogcontent a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 12px;
+    display: inline-block;
+    background-color: #266C0B;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.blogcard .blogposted-date{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    display: inline-block;
+    background-color: #266C0B;
+    padding: 0px 0px;
+    border-radius: 30px;
+    
+}
+
+.blogcard .blogposted-date p{
+    font-size: 12px;
+    color: #fff;
+    margin: 10px 10px;
+
+}
+/*----------------Blog Tin tức--------------*/
+
+/*----------------Đánh giá--------------*/
+.section__container {
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .rvheader {
+    margin-bottom: 2rem;
+  }
+  
+  
+  .testimonials__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+
+  .card {
+    width: 100%;;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .card img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    object-fit: contain;
+  }
+
+  .card p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0px 0px 0 20px 0;
+  }
+  
+  
+/*----------------Đánh giá--------------*/
+
+
+/*----------------Nút quay lại đầu trang--------------*/
+#backtop{
+    width: 50px;
+    height: 50px;
+    background-color: #6AC943;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    cursor: pointer;
+}
+
+#backtop:hover{
+    background-color: #266C0B;
+}
+
+#backtop i{
+    font-size: 30px;
+}
+
+#backtop{
+    z-index:2;
+}
+/*----------------Nút quay lại đầu trang--------------*/
+
+/*----------------Responsive--------------*/
+
+@media screen and (max-width: 900px) {
+    .blogcards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-section{
+        padding: 1em;
+    }
+    .features-card{
+        padding: 5em 2em;
+    }
+    .features-column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    #product1 .container{
+        justify-content: space-between;
+    }
+
+    #product1 .pro{
+        margin: 0px;
+    }
+    .blogcards{
+        grid-template-columns: 1fr;
+    }
+    .features-section{
+        padding: 1em 7em;
+    }
+    
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .chatpopup .chat-btn{
+        width: 30px;
+        height: 30px;
+        margin-bottom: -12px;
+        right:55px;
+
+    }
+    .chatpopup .chat-btn i{
+        font-size: 20px;
+    }
+    .chatpopup .chat-popup{
+        bottom:50px;
+        right:90px;
+    }
+    #popup img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .section-p1{
+        padding: 20px;
+    }
+    #product1 .pro{
+        width: 100%
+    }
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+    .chat-popup{
+        bottom: 120px;
+        right:10%;
+        width: 80vw;
+    }
+    .testimonials__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #Time-dis-play{
+        font-size: 20px;
+        word-spacing: 20px;
+    }
+    .cowndowns span{
+        font-size: 10px;
+        word-spacing: 20px;
+    }
+
+}
+
+/*----------------Responsive--------------*/
+
+
+
+
+
+

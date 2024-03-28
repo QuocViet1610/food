@@ -1,0 +1,122 @@
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    border: 1px solid #6ac943;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #6ac943;
+    border-left: none;
+    border-right: none;
+
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+    overflow: visible;
+    text-overflow: clip; 
+    white-space: normal; 
+}
+
+/*đổi màu nút xóa*/
+.xoasp {
+    color: #6ac943; 
+    cursor: pointer; 
+}
+
+.xoasp:hover {
+    color: #266C0B;
+}
+.dongia,
+.tongtien{
+    font-weight: bold;
+    color: #266C0B;
+}
+
+#subtotal button {
+    width: 100%;
+    background-color: #6AC943;
+    border: #6AC943;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+#subtotal button:hover {
+    color: #266C0B;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #6AC943;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #266C0B;
+    
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#subtotal table td {
+    width: 50%;
+    padding: 10px;
+    font-size: 13px;
+}
+
+

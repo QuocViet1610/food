@@ -1,0 +1,215 @@
+/*Log in*/
+.container-forms {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #effde3;
+  padding: 50px 100px 50px 100px;
+}
+
+
+#flogin {
+  z-index: 1000;
+}
+
+#navbar {
+  z-index: 1000;
+}
+
+.dropdownnav {
+  z-index: 1000;
+}
+
+.form-login {
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+}
+
+.form-signup {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.forms.show-signup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#dangnhap {
+  font-size: 30px;
+  font-weight: 600;
+  color: #302C2C;
+  text-align: center;
+}
+
+#flogin {
+  margin-top: 30px;
+}
+
+#flogin .field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+}
+
+.field input:focus {
+  border-bottom-width: 2px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.field button {
+  color: #fff;
+  background-color: #6ac943;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.field button:hover {
+  color: #fff;
+  background-color: #266C0B;
+}
+
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #302C2C
+}
+
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #302C2C;
+}
+
+.form-login a {
+  color: #6ac943;
+  text-decoration: none;
+}
+
+.form-content a {
+  text-decoration: underline;
+}
+
+.form-login a:hover {
+  text-decoration: underline;
+  color: #266C0B;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+.line::before {
+  content: 'Hoặc';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #302C2C;
+  padding: 0 15px;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.field-facebook {
+  padding: 10px;
+  color: #fff;
+  background-color: #4267b2;
+}
+
+a.field-facebook:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.fb-icon {
+  position: relative;
+}
+
+.google-img {
+  height: 15px;
+  width: 15px;
+  object-fit: cover;
+}
+
+.google-img {
+  position: relative;
+}
+
+a.field-google {
+  padding: 10px;
+}
+
+a.field-google {
+  border: 1px solid #cacaca;
+}
+
+a.field-google:hover {
+  text-decoration: none;
+}
+
+a.field-google span {
+  font-weight: 500;
+  opacity: 0.6;
+  color: #232836;
+}
+
+/*Respon login*/
+@media screen and (max-width: 768px) {
+  .form-login {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-login {
+    max-width: 250px;
+    padding: 15px;
+  }
+}
+
